@@ -1,4 +1,4 @@
-public class ArithmaticOperations {
+public class ArithmeticOperations {
     public void addition(int a, int b) {
         System.out.println("Sum: "+ (a + b));
     }

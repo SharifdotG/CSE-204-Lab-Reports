@@ -1,5 +1,5 @@
-public class Fibonacchi {
-    public void fibonacchi(int n) {
+public class Fibonacci {
+    public void fibonacci(int n) {
         int a = 0;
         int b = 1;
         int c = 0;

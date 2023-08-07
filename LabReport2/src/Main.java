@@ -1,3 +1,9 @@
+/* 
+ * @author Sharif Md. Yousuf
+ * @ID 22101128
+ * @date 08/02/2021
+*/
+
 import java.util.Scanner;
 
 public class Main {
@@ -10,7 +16,7 @@ public class Main {
         int firstNumber = scanner.nextInt();
         System.out.print("Enter second number: ");
         int secondNumber = scanner.nextInt();
-        ArithmaticOperations arithmeticOperations = new ArithmaticOperations();
+        ArithmeticOperations arithmeticOperations = new ArithmeticOperations();
         arithmeticOperations.addition(firstNumber, secondNumber);
         arithmeticOperations.subtraction(firstNumber, secondNumber);
         arithmeticOperations.multiplication(firstNumber, secondNumber);
@@ -59,12 +65,12 @@ public class Main {
         MultiplicationTable multiplicationTable = new MultiplicationTable();
         multiplicationTable.multiplicationTable(n);
 
-        System.out.println("\nFibonacchi");
+        System.out.println("\nFibonacci");
         System.out.println("----------");
         System.out.print("Enter a number: ");
-        int fibonacchiNumber = scanner.nextInt();
-        Fibonacchi fibonacchi = new Fibonacchi();
-        fibonacchi.fibonacchi(fibonacchiNumber);
+        int fibonacciNumber = scanner.nextInt();
+        Fibonacci fibonacci = new Fibonacci();
+        fibonacci.fibonacci(fibonacciNumber);
 
         System.out.println("\nArray Sum");
         System.out.println("---------");
