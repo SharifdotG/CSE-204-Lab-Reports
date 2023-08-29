@@ -1,5 +1,5 @@
 /*
- * @autor: Sharif md. Yousuf
+ * @autor: Sharif Md. Yousuf
  * @ID: 22101128
  */
 
