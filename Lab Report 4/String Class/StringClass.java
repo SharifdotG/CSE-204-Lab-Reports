@@ -3,8 +3,6 @@
  * ID: 22101128
  * 
  * Examples and Usage of the String class in Java.
- * 
- * use these methods: charAt, compareTo, concat, contains, endsWith, equals, equalsIgnoreCase, indexOf, isEmpty, lastIndexOf, length, replace, replaceAll, split, startsWith, substring, toLowerCase, toString, toUpperCase, trim
  */
 
 public class StringClass {
