@@ -23,8 +23,8 @@ public class SemesterGPA { // This class is used to collect GPAs for each semest
             try { // Try block to catch any exception that occurs
                 System.out.print("Enter GPA for Semester No. " + (i + 1) + ": ");
                 double gpa = scanner.nextDouble();
-                CGPACalculation.validateGPA(gpa);
-                gpas[i] = gpa;
+                CGPACalculation.validateGPA(gpa); // Validating the GPA
+                gpas[i] = gpa; // Storing the GPA
             } catch (UserInputException e) {
                 System.out.println("Invalid GPA input: " + e.getMessage());
                 System.out.println("Please try again.");
@@ -36,9 +36,10 @@ public class SemesterGPA { // This class is used to collect GPAs for each semest
             }
         }
         System.out.println("---------------------------------");
+        System.out.println();
     }    
 
-    public double calculateCGPA() {
+    public double calculateCGPA() { // This method is used to calculate CGPA
         return CGPACalculation.calculateCGPA(gpas);
     }
 }

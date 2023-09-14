@@ -16,7 +16,7 @@ public class Main {
 
             System.out.println();
             
-            Scanner scanner = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in); // Creating a Scanner object
 
             System.out.println("---------------------------------");
 
@@ -26,8 +26,11 @@ public class Main {
             System.out.print("Enter Your Name: ");
             String name = scanner.nextLine();
 
-            System.out.print("Enter Your ID: ");
             int id;
+
+            /*
+             * Validating the ID input and throwing an exception if the input is invalid
+             */
             while (true) {
                 try {
                     System.out.print("Enter Your ID: ");
@@ -42,7 +45,7 @@ public class Main {
             System.out.println("---------------------------------");
 
             /*
-             * Creating semesterGPA object and calculating CGPA
+             * Creating a semesterGPA object and calling the collectGPAs() method
              */
             SemesterGPA semesterGPA = new SemesterGPA();
             semesterGPA.collectGPAs();
