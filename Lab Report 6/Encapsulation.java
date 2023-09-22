@@ -6,11 +6,18 @@
  */
 
 public class Encapsulation {
+    /*
+     * Declaring the instance variables
+     */
     private String name;
     private int id;
     private String university;
     private int number1;
     private double number2;
+
+    /*
+     * getter and setter methods for the instance variables
+     */
 
     public String getName() {
         return name;

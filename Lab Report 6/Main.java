@@ -12,6 +12,7 @@ public class Main {
         /*
          * Start of Project 1
          */
+        System.out.println("*********************************");
         System.out.println("---------------------------------");
         System.out.println("            Project 1            ");
         System.out.println("---------------------------------");
@@ -69,6 +70,7 @@ public class Main {
             System.out.printf("CGPA: %.2f\n", cgpa);
 
             System.out.println("---------------------------------");
+            System.out.println();
         } catch (Exception e) { // Catching any other exception if it occurs
             System.out.println("---------------------------------");
             System.out.println("An error occurred: " + e.getMessage());
@@ -79,6 +81,9 @@ public class Main {
             System.out.println("---------------------------------");
             System.out.println("Thank you for using The (Exception)al CGPA Calculator <3");
             System.out.println("---------------------------------");
+            System.out.println("*********************************");
+            System.out.println();
+            System.out.println();
         }
         /*
          * End of Project 1
@@ -87,40 +92,67 @@ public class Main {
         /*
          * Start of Project 2
          */
+        System.out.println("*********************************");
         System.out.println("---------------------------------");
         System.out.println("            Project 2            ");
         System.out.println("---------------------------------");
         System.out.println();
 
+        /*
+         * Creating objects of the Encapsulation and Calculation classes
+         */
         Encapsulation encapsulation = new Encapsulation();
         Calculation calculation = new Calculation();
 
+        System.out.println("---------------------------------");
+
+        /*
+         * Inputting the User's Name, UID, University, and two numbers
+         */
         System.out.print("Enter Your Name: ");
-        encapsulation.setName(scanner.nextLine());
+        encapsulation.setName(scanner.nextLine()); // Using nextLine() to read the entire line
         
         System.out.print("Enter Your UID: ");
-        encapsulation.setId(scanner.nextInt());
+        encapsulation.setId(scanner.nextInt()); // Using nextInt() to read the integer
 
         System.out.print("Enter Your University: ");
-        encapsulation.setUniversity(scanner.next());
+        encapsulation.setUniversity(scanner.next()); // Using next() to read the first word
 
         System.out.println("Enter Two Numbers:");
+
+        System.out.print("First Number: ");
+        encapsulation.setNumber1(scanner.nextInt()); // Using nextInt() to read the integer
+
+        System.out.print("Second Number: ");
+        encapsulation.setNumber2(scanner.nextDouble()); // Using nextDouble() to read the double
+
+        System.out.println("---------------------------------");
         System.out.println();
 
-        System.out.print("Enter Your First Number: ");
-        encapsulation.setNumber1(scanner.nextInt());
+        System.out.println("---------------------------------");
 
-        System.out.print("Enter Your Second Number: ");
-        encapsulation.setNumber2(scanner.nextDouble());
-
+        /*
+         * Printing the results
+         */
         System.out.println("Your Name: " + encapsulation.getName());
         System.out.println("Your UID: " + encapsulation.getId());
         System.out.println("Your University: " + encapsulation.getUniversity());
-        System.out.println("1st Magic Number: ");
+        System.out.print("1st Magic Number: ");
         calculation.magicNumber1(encapsulation.getNumber1());
-        System.out.println("2nd Magic Number: ");
+        System.out.print("2nd Magic Number: ");
         calculation.magicNumber2(encapsulation.getNumber2(), encapsulation.getId());
 
+        System.out.println("---------------------------------");
+
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println("   The Project 2 is completed!   ");
+        System.out.println("---------------------------------");
+        System.out.println("*********************************");
+
         scanner.close();
+        /*
+         * End of Project 2
+         */
     }
 }
