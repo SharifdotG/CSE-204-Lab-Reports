@@ -15,9 +15,10 @@ public class SingleInheritance extends Sum { // inheriting Sum class
      * singleInheritance method for adding two numbers together using single inheritance.
      */
     public void singleInheritance(int a, int b) {
-        SingleInheritance singleInherit = new SingleInheritance(); // create an object of SingleInheritance class
+        // create an object of SingleInheritance class
+        SingleInheritance singleInherit = new SingleInheritance();
         
-        System.out.println("The Summation of " + a + " and " + b + " is " + singleInherit.sum(a, b) + "."); // print the sum of a and b
+        // print the sum of a and b
+        System.out.println("The Summation of " + a + " and " + b + " is " + singleInherit.sum(a, b) + ".");
     }
 }
-

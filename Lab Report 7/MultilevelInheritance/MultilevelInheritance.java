@@ -24,4 +24,3 @@ public class MultilevelInheritance extends Sub { // inheriting Sub class
         System.out.println("The Subtraction of " + a + " and " + b + " is " + multiLevelInherit.sub(a, b) + ".");
     }
 }
-

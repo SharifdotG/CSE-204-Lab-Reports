@@ -18,4 +18,3 @@ public class Sum {
         return a + b; // return the sum of a and b
     }
 }
-
