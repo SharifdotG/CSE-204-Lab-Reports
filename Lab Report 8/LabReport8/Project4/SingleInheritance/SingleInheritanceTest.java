@@ -7,6 +7,6 @@ public class SingleInheritanceTest extends Summation {
 
     public void singleInheritance() {
         System.out.println("Single Inheritance! O(∩_∩)O"
-                + "\nSummation: " + sum());
+                + "\nSummation: " + sum() + "\n");
     }
 }

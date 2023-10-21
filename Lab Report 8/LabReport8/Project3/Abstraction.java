@@ -11,17 +11,21 @@ public abstract class Abstraction extends GetterSetterMethods {
             System.out.println("This Output is from an Concrete Method!"
                     + "\n" + number + " is not a Prime Number! (┬┬﹏┬┬)\n");
         } else {
-            for (int i = 2; i <= number / 2; i++) {
+            for (int i = 2; i < number / 2; i++) {
                 if (number % i == 0) {
                     flag = 1;
 
                     System.out.println("This Output is from an Concrete Method!"
                             + "\n" + number + " is not a Prime Number! ::>_<::\n");
+
+                    break;
                 }
             }
 
-            System.out.println("This Output is from an Concrete Method!"
-                    + "\n" + number + " is not a Prime Number! ○( ＾皿＾)っ Hehehe…\n");
+            if (flag == 0) {
+                System.out.println("This Output is from an Concrete Method!"
+                        + "\n" + number + " is not a Prime Number! ○( ＾皿＾)っ Hehehe…\n");
+            }
         }
     }
 

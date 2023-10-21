@@ -55,6 +55,7 @@ public class Main {
             System.out.println("             -------             ");
             System.out.println("*********************************");
             System.out.println();
+            System.out.println();
 
             switch (choice) {
                 case 1:
@@ -240,7 +241,7 @@ public class Main {
                     System.out.println("*********************************");
                     System.out.println("             -------             ");
                     System.out.println("      Project 5 - Interface      ");
-                    System.out.println("Interface Implementation Showcase");
+                    System.out.println("Implementing Multiple Interfaces!");
                     System.out.println("             -------             ");
                     System.out.println();
 
@@ -257,9 +258,8 @@ public class Main {
                     ImplementingInterfaces implementingInterfaces = new ImplementingInterfaces();
 
                     System.out.println("             -------             ");
-                    implementingInterfaces.minMax(number3, number4);
-                    implementingInterfaces.fibonacchi(number3);
-                    implementingInterfaces.digitSum(number3);
+                    implementingInterfaces.sum(number3, number4);
+                    implementingInterfaces.sub(number3, number4);
                     System.out.println("             -------             ");
                     System.out.println();
 
@@ -291,6 +291,8 @@ public class Main {
 
                     System.out.println("             -------             ");
                     overriddenMethods.reverseNumber(number5);
+                    overriddenMethods.fibonacci(number5);
+                    overriddenMethods.digitSum(number5);
                     System.out.println("             -------             ");
                     System.out.println();
 
@@ -317,8 +319,10 @@ public class Main {
                     System.out.println("3 Operations Below will be performed");
                     System.out.println("using the same method name under");
                     System.out.println("the usage of Method Overloading!");
+                    System.out.println("             -------             ");
                     System.out.println();
 
+                    System.out.println("             -------             ");
                     System.out.println("Positive, Negative or Zero?!");
                     System.out.println("Return Type: Void");
                     System.out.println("Parameter: 1 Integer");

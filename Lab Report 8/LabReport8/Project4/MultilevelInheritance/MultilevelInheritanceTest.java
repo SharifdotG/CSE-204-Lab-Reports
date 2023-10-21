@@ -8,6 +8,6 @@ public class MultilevelInheritanceTest extends Subtraction {
     public void multilevelInheritance() {
        System.out.println("Multilevel Inheritance! (❁´◡`❁))"
                 + "\nSummation: " + sum()
-                + "\nSubtraction: " + sub());
+                + "\nSubtraction: " + sub() + "\n");
     }
 }

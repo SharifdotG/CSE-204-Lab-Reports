@@ -1,46 +1,17 @@
 package LabReport8.Project5;
 
-public class ImplementingInterfaces implements Interfaces {
+public class ImplementingInterfaces implements SumInterface, SubInterface {
     @Override
-    public void minMax(int number1, int number2) {
-        if (number1 > number2) {
-            System.out.println("Minimum Number: " + number2
-                    + "\nMaximum Number: " + number1
-                    + "\n╰(*°▽°*)╯\n");
-        } else {
-            System.out.println("Minimum Number: " + number1
-                    + "\nMaximum Number: " + number2
-                    + "\n╰(*°▽°*)╯\n");
-        }
+    public void sum(int number1, int number2) {
+        System.out.println("This Output is from the First Interface!"
+                + "\n" + "The Summation of " + number1 + " & " + number2
+                + ": " + (number1 + number2) + "! (┬┬﹏┬┬)\n");
     }
 
     @Override
-    public void fibonacchi(int number) {
-        System.out.print("Fibonacci Series of " + number + " terms: ");
-
-        long firstNumber = 0, secondNumber = 1;
-
-        for (int i = 2; i <= number; i++) {
-            System.out.print(secondNumber + ", ");
-
-            long nextNumber = firstNumber + secondNumber;
-            firstNumber = secondNumber;
-            secondNumber = nextNumber;
-        }
-
-        System.out.println("\n(〃￣︶￣)人(￣︶￣〃)\n");
-    }
-
-    @Override
-    public void digitSum(int number) {
-        int sum = 0;
-        int temp = number;
-
-        while (temp != 0) {
-            sum += temp % 10;
-            temp /= 10;
-        }
-
-        System.out.println("Digit Sum of " + number + ": " + sum + "\n(≧∇≦)ﾉ");
+    public void sub(int number1, int number2) {
+        System.out.println("This Output is from the Second Interface!"
+                + "\n" + "The Subtraction of " + number1 + " & " + number2
+                + ": " + (number1 - number2) + "! (┬┬﹏┬┬)");
     }
 }

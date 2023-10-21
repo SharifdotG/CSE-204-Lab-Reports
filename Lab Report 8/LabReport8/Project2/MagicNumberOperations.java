@@ -17,7 +17,7 @@ public class MagicNumberOperations extends GetterSetterMethods {
             factorialResult *= i;
         }
 
-        System.out.print("and the factorial is " + factorialResult + "! []~(￣▽￣)~*");
+        System.out.print("and the factorial is " + factorialResult + "! []~(￣▽￣)~*\n");
     }
 
     public void magicNumber2(double number2) {

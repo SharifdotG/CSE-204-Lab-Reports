@@ -40,7 +40,7 @@ public class GPAOperations {
     public void validateGPA(double gpa) throws UserDefinedException {
         if (gpa < 0.0) {
             throw new UserDefinedException("""
-                    How your GPA is negative! .·´¯`(>▂<)´¯`·.
+                    How come your GPA is negative! .·´¯`(>▂<)´¯`·.
                     Please try again! o(*￣▽￣*)ブ
                     """);
         } else if (gpa > 4.0) {

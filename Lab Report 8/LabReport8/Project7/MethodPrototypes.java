@@ -3,10 +3,13 @@ package LabReport8.Project7;
 public class MethodPrototypes {
     public void thisOrThat(int number) {
         if (number > 0) {
+            System.out.println("You Entered " + number + "!");
             System.out.println(number + " is Positive! Σ(っ °Д °;)っ");
         } else if (number < 0) {
+            System.out.println("You Entered " + number + "!");
             System.out.println(number + " is Negative! φ(゜▽゜*)♪");
         } else {
+            System.out.println("You Entered " + number + "!");
             System.out.println(number + " is Zero! ✪ ω ✪");
         }
     }
